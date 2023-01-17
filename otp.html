@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="otp.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="signin_section">
+      <div class="heading">osumburg</div>
+      <span class="otp_section">
+        <div class="welcome">Enter OTP</div>
+        <div class="please">
+          an 6 digt otp is send in your mobile number
+          <span class="number">+91 98876553</span>
+        </div>
+        <div class="otp_inputs">
+          <input type="text" class="input input1" id="1" maxlength="1" />
+          <input type="text" class="input input1" id="2" maxlength="1" />
+          <input type="text" class="input input1" id="3" maxlength="1" />
+          <input type="text" class="input input1" id="4" maxlength="1" />
+          <input type="text" class="input input1" id="5" maxlength="1" />
+          <input type="text" class="input input1" id="6" maxlength="1" />
+        </div>
+      </span>
+      <button class="login">Verify OTP</button>
+      <div class="forgot">Resend code</div>
+    </div>
+    <script>
+      const input1 = document.getElementById("1");
+
+      input1.addEventListener("input", (e) => {
+        console.log(e.target.value.length);
+        if (e.target.value.length > 0) {
+          document.getElementById(2).focus();
+        }
+      });
+
+      const input2 = document.getElementById("2");
+
+      input2.addEventListener("input", (e) => {
+        console.log(e.target.value.length);
+        if (e.target.value.length > 0) {
+          document.getElementById(3).focus();
+        }
+      });
+
+      const input3 = document.getElementById("3");
+
+      input3.addEventListener("input", (e) => {
+        console.log(e.target.value.length);
+        if (e.target.value.length > 0) {
+          document.getElementById(4).focus();
+        }
+      });
+
+      const input4 = document.getElementById("4");
+
+      input4.addEventListener("input", (e) => {
+        console.log(e.target.value.length);
+        if (e.target.value.length > 0) {
+          document.getElementById(5).focus();
+        }
+      });
+
+      const input5 = document.getElementById("5");
+
+      input5.addEventListener("input", (e) => {
+        console.log(e.target.value.length);
+        if (e.target.value.length > 0) {
+          document.getElementById(6).focus();
+        }
+      });
+    </script>
+  </body>
+</html>
